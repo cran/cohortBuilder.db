@@ -1,0 +1,35 @@
+Package: cohortBuilder.db
+Type: Package
+Title: Database Source Layer for 'cohortBuilder'
+Version: 1.0.0
+Authors@R: 
+    c(person('Krystian', 'Igras',
+             email = 'krystian8207@gmail.com',
+             role = c('cre', 'aut'))
+    )
+Maintainer: Krystian Igras <krystian8207@gmail.com>
+Description: Extends 'cohortBuilder' with a source layer for database tables.
+    Cohort filtering steps are translated to 'dbplyr' queries and executed on the
+    database server, so no data needs to be pulled into R. Supports the
+    'shinyCohortBuilder' graphical interface and offers configurable strategies
+    for how intermediate step results are passed between filtering steps.
+License: MIT + file LICENSE
+URL: https://github.com/r-world-devs/cohortBuilder.db
+BugReports: https://github.com/r-world-devs/cohortBuilder.db/issues
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: rlang, tibble, purrr, dplyr (>= 1.0.0), magrittr, glue, S7,
+        DBI, dbplyr, cohortBuilder (>= 1.0.0), queryBuilder,
+        shinyWidgets, shinyCohortBuilder (>= 1.0.0)
+KeepSource: true
+Suggests: shiny, shinyQueryBuilder, RSQLite, RPostgres, knitr,
+        rmarkdown, withr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-11-02 13:21:07 UTC; krystiai
+Author: Krystian Igras [cre, aut]
+Repository: CRAN
+Date/Publication: 2026-11-23 14:50:02 UTC
